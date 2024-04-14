@@ -1,0 +1,327 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PoppinsLatin-Regular;
+}
+@font-face {
+    font-family: PoppinsLatin-Regular;
+    src: url(Poppins/PoppinsLatin-Regular.ttf);
+}
+body
+{
+    color: #242931;
+}
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    position: relative;
+}
+.logo
+{
+    font-size: 2.5rem;
+}
+span
+{
+    color: #ffb923;
+}
+.nav
+{
+    display: flex;
+    list-style: none;
+}
+.nav li a
+{
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    color: black;
+}
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+h3
+{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 35px;
+    max-width: 500px;
+}
+h1
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+p
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 35px;
+    max-width: 500px;
+}
+.menu
+{
+    position: fixed;
+    background: white;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    border-top-right-radius: 15px;
+    transition: 2s;
+}
+.menu::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+    background: #242931;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    border-top-right-radius: 15px;
+    z-index: -1;
+    transition: 2s;
+}
+.menu:hover::before
+{
+    left: 50%;
+}
+.first-menu
+{
+    position: fixed;
+    left: 50px;
+}
+.menu ion-icon
+{
+    font-size: 2rem;
+    color: #242931;
+    margin: 0 10px;
+    padding: 20px 20px 30px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: white;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    transition: .3s;
+}
+.menu ion-icon:hover
+{
+    color: white;
+    background: #242931;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    transform: translateY(-10px);
+}
+.menu-icon
+{
+    position: fixed;
+    bottom: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20%;
+    transition: 2s;
+}
+.hero::before
+{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 29%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 200px;
+    height: 200px;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    background: #2661c0;
+    border-radius: 25%;
+    animation: kimi 15s linear forwards infinite;
+}
+@keyframes kimi
+{
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    25%
+    {
+        transform: translate(-250%, 120%) rotate(60deg);
+    }
+    50%
+    {
+        transform: translate(500%, 130%) rotate(90deg);
+    }
+    51%
+    {
+        transform: translate(500%, 130%) rotate(90deg) scale(1.5);
+    }
+    75%
+    {
+        transform: translate(420%, -140%) rotate(40deg);
+    }
+    76%
+    {
+        transform: translate(420%, -140%) rotate(40deg) scale(2.0);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+}
+.hero::after
+{
+    content: '';
+    position: absolute;
+    top: 75%;
+    right: 16%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 200px;
+    height: 200px;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    background: #6e077e;
+    border-radius: 25%;
+    animation: kimi2 15s linear forwards infinite;
+}
+@keyframes kimi2
+{
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    25%
+    {
+        transform: translate(150%, -220%) rotate(60deg);
+    }
+    50%
+    {
+        transform: translate(-300%, -330%) rotate(90deg);
+    }
+    51%
+    {
+        transform: translate(-300%, -330%) rotate(90deg) scale(1.5);
+    }
+    75%
+    {
+        transform: translate(-420%, -140%) rotate(40deg);
+    }
+    76%
+    {
+        transform: translate(-420%, -140%) rotate(40deg) scale(2.0);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+}
+body.night
+{
+    color: white;
+    background: #242931;
+}
+body.night .nav li a
+{
+    color: white;
+}
+body.night .hero::before,
+body.night .hero::after
+{
+    background: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+    25px 15px 35px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+    inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+    inset 30px 10px 35px 10px rgba(0, 0, 0, 0.2);
+}
+body.night menu
+{
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    background: #242931;
+}
+body.night menu::before
+{
+    background: white;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+}
+body.night menu ion-icon
+{
+    background: #242931;
+    color: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+    25px 15px 35px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+    inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+    inset 30px 10px 35px 10px rgba(0, 0, 0, 0.2);
+}
+body.night menu ion-icon:hover
+{
+    background: white;
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+    25px 15px 35px rgb(0 0 0 / 25%),
+    inset 5px 0px 10px rgb(0 0 0 / 50%),
+    inset -5px 5px 10px rgb(0 0 0 / 50%),
+    inset 30px 10px 35px 10px rgb(255 255 255 / 20%);
+    color: black;
+}
+.menu.active
+{
+    width: 70%;
+}
+.menu.active .menu-icon
+{
+    bottom: -10px;
+}
